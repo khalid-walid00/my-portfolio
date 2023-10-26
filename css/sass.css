@@ -1,0 +1,169 @@
+@media (min-width: 800px) and (max-width: 5000px) {
+  body::before {
+    background-image: linear-gradient(90deg, rgba(58, 159, 247, 0.678), rgb(178, 234, 249));
+    content: "_";
+    position: absolute;
+    width: 1200px;
+    height: 1200px;
+    right: -269px;
+    top: -368px;
+    transform: rotate(70deg);
+    overflow-x: hidden;
+    border-bottom-left-radius: 104%;
+    border-end-end-radius: 61%;
+    z-index: -1;
+    transform: rotate(11deg);
+  }
+  #particles-js {
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    content: "_";
+    right: -590px;
+    top: -560px;
+    border-radius: 50%;
+    -webkit-clip-path: circle(50%);
+            clip-path: circle(50%);
+    overflow: hidden;
+  }
+  #img {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  #imgabout {
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: 37%;
+    width: 450px;
+    height: 450px;
+  }
+  #changecolor {
+    position: absolute;
+    width: -moz-max-content;
+    width: max-content;
+    top: 55%;
+    right: 0%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .changeok {
+    position: fixed;
+    left: -17.5% !important;
+    top: 50%;
+    width: -moz-max-content;
+    width: max-content;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .bgmargin {
+    margin-top: 30rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  body::before {
+    background-image: linear-gradient(-97deg, rgba(118, 188, 250, 0.453) 20%, rgb(250, 254, 255));
+    width: 0px;
+    height: 0px;
+    content: "_";
+    position: absolute;
+    right: -170px;
+    top: -160px;
+    border-bottom-left-radius: 50%;
+    border-end-end-radius: 50%;
+    transform: rotate(52deg);
+    z-index: -4444;
+    overflow-x: hidden;
+  }
+  #img {
+    width: 65%;
+    height: 25%;
+    border-radius: 50%;
+  }
+  #imgabout {
+    width: 65%;
+    height: 25%;
+    border-radius: 50%;
+    left: 45%;
+    top: 22%;
+  }
+  #col1 {
+    position: absolute;
+    top: 450px;
+    right: 75px;
+  }
+  #particles-js {
+    width: 0px;
+    height: 0px;
+    content: "_";
+    position: absolute;
+    right: -230px;
+    top: -610px;
+    border-bottom-left-radius: 50%;
+    border-end-end-radius: 50%;
+    transform: rotate(52deg);
+    z-index: -1111;
+    overflow-x: hidden;
+  }
+  #offcanvas {
+    position: fixed;
+  }
+  .chose {
+    border: 0px;
+    outline: 0;
+  }
+  #changecolor {
+    position: fixed;
+    left: 90%;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-item::after {
+    content: "_________________________________";
+    color: white;
+  }
+  .ul {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.429);
+  }
+  ul::before {
+    content: "_";
+    position: absolute;
+    -webkit-clip-path: polygon(50% 50%, 100% 0%, 0% 0%);
+            clip-path: polygon(50% 50%, 100% 0%, 0% 0%);
+    transform: rotate(180deg);
+    background-color: rgba(0, 0, 0, 0.429);
+    height: 50px;
+    width: 40px;
+    top: -50px;
+    left: 85%;
+  }
+}
+.chose:hover {
+  border: 1px groove rgb(0, 191, 255);
+  transition: 4s;
+}
+
+.anav:hover, .big:hover {
+  cursor: pointer;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  transition: 0.5s;
+  transform: scale(1.1);
+  font-size: larger;
+}
+
+.zoom:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.1);
+  font-size: larger;
+}
+
+.noanimation:hover {
+  animation: none;
+}/*# sourceMappingURL=sass.css.map */
