@@ -110,17 +110,12 @@ left: 45%;
    }
    #particles-js{
 
-    width: 0px;
-    height: 00px;
+    width: 200%;
+    height: 600%;
     content: "_";
     position: absolute;
-    right: -230px;
-    top: -610px;
-    border-bottom-left-radius: 50%;
-    border-end-end-radius: 50%;
-   transform: rotate(52deg);
-   z-index: -1111;
-   overflow-x: hidden;
+    top: 0px;
+   z-index: -11111;
 }
 #offcanvas{
   position: fixed;
