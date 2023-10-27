@@ -99,10 +99,9 @@
   #particles-js {
     width: 100%;
     height: 85%;
-    content: "_";
-    position: absolute;
+    position: fixed;
     top: 0px;
-    z-index: -11111;
+    z-index: -1;
   }
   #offcanvas {
     position: fixed;
