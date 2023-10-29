@@ -112,7 +112,10 @@
   }
   #changecolor {
     position: fixed;
+    top: 50%;
     left: 90%;
+    width: -moz-max-content;
+    width: max-content;
   }
   .nav-item {
     width: 100%;
