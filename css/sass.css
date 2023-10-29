@@ -43,7 +43,7 @@
     height: 450px;
   }
   #changecolor {
-    position: absolute;
+    position: fixed;
     width: -moz-max-content;
     width: max-content;
     top: 55%;
