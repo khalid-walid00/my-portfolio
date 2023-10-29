@@ -245,6 +245,8 @@
 <hr class="my-4">
 <div class="row justify-content-center mb-5 ps-4">Copyright © 2023 Portfolio & CV | Powered by Portfolio & CV</div>
 </div>
+<div class="rounded-circle position-fixed ground text-center hidden" id="up" style="bottom: 10px;right: 20px;width: 5rem;height: 5rem;"><i class="fa-solid fa-up-long fa-shake position-relative fs-1 color" style="top: 30%;"></i></div>
+
     </diV>
     </div>
     <script src="js/vanilla-tilt.js"></script>
@@ -253,6 +255,18 @@
     <script src="js/popper.min.js"></script>
     <script src="js/particles.js"></script>
     <script>
+          $(window).on("scroll",()=>{
+        if(scrollY>=300)
+        {
+         $("#up").fadeIn(1000)
+        }else
+        {
+            $("#up").fadeOut(1000)
+        }
+        $("#up").on("click",()=>{
+          $(window).scrollTop(0)
+        })
+       })
         if ($(document).width()<500) {
            $(".ul").addClass("position-absolute rounded-3 mt-4")
            $(".anav").addClass("zoom")
