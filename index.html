@@ -65,11 +65,11 @@
         </div>
       
 
-      <button id="changecolor" class="btn " data-bs-toggle="offcanvas" data-bs-target="#offcanvas"><i class="fa-solid fa-palette me-2" style="color: #ffffff;"></i></button>
+      <button id="changecolor" style="position: fixed;top: 50%;" class="btn " data-bs-toggle="offcanvas" data-bs-target="#offcanvas"><i class="fa-solid fa-palette me-2" style="color: #ffffff;"></i></button>
 
     <div class="offcanvas offcanvas-end " id="offcanvas" >
 
-            <button id="changecolor" class="changeok btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"><i class="fa-solid fa-palette me-2" style="color: #ffffff;"></i>OK</button>
+            <button id="changecolor" class="changeok btn " data-bs-toggle="offcanvas" data-bs-target="#offcanvas"><i class="fa-solid fa-palette me-2" style="color: #ffffff;"></i>OK</button>
 
         <div class=" offcanvas-header shadow-lg font-monospace fw-bold">Portfolio & CV <button class="btn-close"  data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></button></div>
         <div class="offcanvas-body">Use the template as-is or try different colors and fonts from the options below.
@@ -413,6 +413,7 @@
 <hr class="my-4">
 <div class="row justify-content-center mb-5 ps-4">Copyright © 2023 Portfolio & CV | Powered by Portfolio & CV</div>
 </div>
+<div class="rounded-circle position-fixed ground text-center hidden" id="up" style="bottom: 10px;right: 20px;width: 5rem;height: 5rem;"><i class="fa-solid fa-up-long fa-shake position-relative fs-1 color" style="top: 30%;"></i></div>
     </diV>
     </div>
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
@@ -421,7 +422,18 @@
     <script src="js/popper.min.js"></script>
     <script src="js/particles.js"></script>
     <script>
-     
+       $(window).on("scroll",()=>{
+        if(scrollY>=300)
+        {
+         $("#up").fadeIn(1000)
+        }else
+        {
+            $("#up").fadeOut(1000)
+        }
+        $("#up").on("click",()=>{
+          $(window).scrollTop(0)
+        })
+       })
         if ($(document).width()<500) {
            $(".ul").addClass("position-absolute rounded-3 mt-4")
            $(".anav").addClass("zoom")

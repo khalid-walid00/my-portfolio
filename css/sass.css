@@ -160,4 +160,8 @@
 
 .noanimation:hover {
   animation: none;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=sass.css.map */
