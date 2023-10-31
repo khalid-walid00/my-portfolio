@@ -63,6 +63,9 @@
   .bgmargin {
     margin-top: 30rem;
   }
+  #arrow-down {
+    display: none;
+  }
 }
 @media screen and (max-width: 750px) {
   body::before {
@@ -78,6 +81,9 @@
     transform: rotate(52deg);
     z-index: -4444;
     overflow-x: hidden;
+  }
+  #arrow-right {
+    display: none;
   }
   #img {
     width: 65%;

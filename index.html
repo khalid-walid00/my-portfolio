@@ -227,14 +227,14 @@
     <div class="row fw-bold fs-1" style="margin-top: 80px;"><div class="col-lg  col-sm-12"> What I do</div></div>
     <div class="row">
         <div class="col-lg  col-sm-12 align-self-center">From understanding your requirements, designing a blueprint and delivering the final product, I do everything that falls in between these lines.</div>
-        <div class="col  text-sm-center"><i class="fa-solid fa-arrow-right-long color big" style="font-size: 10rem;"></i></div>
+        <div class="col  text-sm-center"><i id="arrow-right" class="fa-solid fa-arrow-right-long color big" style="font-size: 10rem;"></i><i id="arrow-down" class="fa-solid fa-arrow-down-long color big" style="font-size: 10rem;"></i></div>
     </div>
     <div class="row">
         <h4> <i class="fa-solid fa-laptop-code color me-2" style="color: #adcbff;"></i>WEB DEVELOPMENT</h4>
         <p class="w-auto mt-2 mb-5">If you are looking for a developer who’ll take over the research and development of your website, I am a well-established professional to help you with this.</p>
     </div>
 <div class="row my-5">
-<div class="col my-5">
+<div class="col-lg col-sm-12  my-5">
     <div class="row fw-bold fs-1" >
         Skills
     </div>
@@ -272,7 +272,7 @@
         <div class= "zoom progress-bar progress-bar-striped icon progress-bar-animated" style="width: 90%">90%</div>
       </div></div> 
 </div>
-<div class="col my-5 ms-4">
+<div class="col-lg col-sm-12 my-5 ms-4">
     <div class="row fw-bold fs-1" >
         My Experience
     </div>
@@ -285,7 +285,7 @@
 <div class="row">
     <div class="row">
     <div class="col fs-1 fw-bold">Portfolio</div>
-    <div class="col text-lg-end text-sm-center"><i class="fa-solid fa-arrow-right-long color big" style="font-size: 10rem;"></i></div>
+    <div class="col text-lg-end text-sm-center"><i id="arrow-right" class="fa-solid fa-arrow-right-long color big" style="font-size: 10rem;"></i><i id="arrow-down" class="fa-solid fa-arrow-down-long color big" style="font-size: 10rem;"></i></div>
    </div>
     <div class="row mt-5" style="margin-bottom: 200px;">
         <div class="col-lg-3 my-4 col-sm-12">
@@ -334,23 +334,16 @@
             </a>
          </div>
          
-         <div class="col-lg-3 mt-3 col-sm-12">
-            <div class="card text-decoration-none card noanimation fa-bounce shadow-lg overflow-hidden big ground" aria-hidden="true">
-                <div class="card-img-top placeholder" style="height:100px;">_</div>
-                <div class="card-body">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder color col-6"></span>
-                  </h5>
-                  <p class="card-text placeholder-glow">
-                    <span class="placeholder col-7"></span>
-                    <span class="placeholder col-4"></span>
-                    <span class="placeholder col-4"></span>
-                    <span class="placeholder col-6"></span>
-                    <span class="placeholder col-8"></span>
-                  </p>
-                </div>
-              </div>
+         <div class="col-lg-3 col-sm-12">
+            <a data-tilt href="https://old-cars.netlify.app/" target="_blank" class="text-decoration-none card noanimation fa-bounce shadow-lg overflow-hidden big ground"style="width: 100%;height: 100%;">
+               <img src="img/2023-10-31 (1).png" alt="pro5" class="card-img-top big"style="width: 100%;height: 50%;">
+               <div class="card-body shadow-sm">
+                <div class="card-title fw-bold fs-4 color">shop to Olds Car</div>
+                <div class="card-text text-secondary fs-6">A website where we display unique, old cars</div>
+               </div>
+            </a>
          </div>
+         
          <div class="col-lg-3 mt-3 col-sm-12">
             <div class="card text-decoration-none card noanimation fa-bounce shadow-lg overflow-hidden big ground" aria-hidden="true">
                 <div class="card-img-top placeholder" style="height:100px;">_</div>
@@ -423,6 +416,9 @@
     <script src="js/popper.min.js"></script>
     <script src="js/particles.js"></script>
     <script>
+        $("#arrow-down,#arrow-right").on("click",()=>{
+            $(window).scrollTop(4400)
+        })
        $(window).on("scroll",()=>{
         if(scrollY>=300)
         {

@@ -67,6 +67,9 @@ left: 45%;
    .bgmargin{
     margin-top: 30rem;
    }
+   #arrow-down{
+    display: none;
+   }
  }
 
  ////////////
@@ -85,7 +88,9 @@ left: 45%;
    z-index: -4444;
    overflow-x: hidden;
   } 
-
+  #arrow-right{
+   display: none;
+  }
 
    #img{
     width: 65%;
